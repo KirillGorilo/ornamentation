@@ -6,12 +6,21 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
     <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
     <title>Jewelry store</title>
+    <link rel="stylesheet" href="./src/style.css">
 </head>
 
 <body>
-    <h1>Hello from Electron renderer!</h1>
-    <p>👋</p>
-    <p id="info"></p>
+    <div class="grid-container">
+        <div class="grid-item">Магазин украшений</div>
+        <div class="grid-item">
+            <input type="text" placeholder="Имя">
+            <input type="password" placeholder="Пароль">
+        </div>
+        <div class="grid-item grid-item_flex">
+            <button class="button-loggin-auth">Вход</button>
+            <button class="button-loggin-auth">Регистрация</button>
+        </div>
+    </div>
 </body>
 <script src="./renderer.js"></script>
 
